@@ -20,6 +20,11 @@ from eulers.utils import is_anagram, is_prime
 def test_is_prime(n: int, expected: bool) -> None:
     assert is_prime(n) == expected
 
+def test_is_prime_raises_on_negative_numbers():
+    with pytest.raises(TypeError):
+        is_prime(-1)
+
+
 
 @pytest.mark.parametrize(
         "a,b,expected",
