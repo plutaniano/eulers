@@ -38,3 +38,9 @@ def test_007():
     from eulers._10001st_prime import solution
 
     assert solution(10_001) == 104_743
+
+def test_008():
+    from eulers.largest_product_in_a_series import solution
+
+    assert solution(13) == 23_514_624_000
+
