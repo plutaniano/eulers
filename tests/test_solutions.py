@@ -39,8 +39,14 @@ def test_007():
 
     assert solution(10_001) == 104_743
 
+
 def test_008():
     from eulers.largest_product_in_a_series import solution
 
     assert solution(13) == 23_514_624_000
 
+
+def test_009():
+    from eulers.special_pythagorean_triplet import solution
+
+    assert solution(1_000) == 31_875_000
