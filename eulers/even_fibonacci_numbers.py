@@ -6,20 +6,13 @@
 # million, find the sum of the even-valued terms.
 
 from itertools import count
-from functools import lru_cache
-
-
-@lru_cache(maxsize=None)
-def fib(n: int) -> int:
-    if n < 2:
-        return n
-    return fib(n - 1) + fib(n - 2)
+from eulers.utils import fibonacci
 
 
 def solution(limit: int) -> int:
     evens = []
     for i in count(start=1):
-        value = fib(i)
+        value = fibonacci(i)
         if value > limit:
             break
         if value % 2 == 0:
