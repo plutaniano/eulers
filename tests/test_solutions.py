@@ -50,3 +50,8 @@ def test_009():
     from eulers.special_pythagorean_triplet import solution
 
     assert solution(1_000) == 31_875_000
+
+def test_010():
+    from eulers.summation_of_primes import solution
+
+    assert solution(2_000_000) == 142_913_828_922
