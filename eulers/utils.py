@@ -1,3 +1,4 @@
+from typing import Generator
 from collections import Counter
 from functools import lru_cache
 
@@ -7,6 +8,15 @@ def is_prime(n: int) -> bool:
         if n % i == 0:
             return False
     return n > 0
+
+
+def primes() -> Generator[int, None, None]:
+    yield 2
+    n = 1
+    while True:
+        n += 2
+        if is_prime(n):
+            yield n
 
 
 def is_anagram(a: str, b: str) -> bool:

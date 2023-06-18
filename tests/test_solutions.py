@@ -32,3 +32,9 @@ def test_006():
     from eulers.sum_square_difference import solution
 
     assert solution(100) == 25_164_150
+
+
+def test_007():
+    from eulers._10001st_prime import solution
+
+    assert solution(10_001) == 104_743
