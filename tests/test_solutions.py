@@ -26,3 +26,9 @@ def test_005():
     from eulers.smallest_multiple import solution
 
     assert solution(20) == 232_792_560
+
+
+def test_006():
+    from eulers.sum_square_difference import solution
+
+    assert solution(100) == 25_164_150
